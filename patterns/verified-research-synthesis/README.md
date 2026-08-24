@@ -63,4 +63,4 @@ For a briefing on AI literacy, the researcher selects current studies and policy
 ## Related assets
 
 - [Research synthesis prompt](../../prompts/research-synthesis/)
-- [Source type identification skill](../../skills/source-type-identification/)
+- [Identify source type skill](../../skills/identify-source-type/)
