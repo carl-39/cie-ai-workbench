@@ -19,11 +19,9 @@ A prompt tells a tool what to do. A skill describes how to perform a capability 
 
 1. Browse [`CATALOGUE.md`](CATALOGUE.md) or an asset-type directory.
 2. Check the asset's status, intended audience, assumptions and limitations.
-3. Copy or adapt experimental assets only in low-risk settings.
+3. Use only assets whose approved scope matches the intended task.
 4. Follow the stated verification and human-oversight requirements.
 5. Record useful test findings or propose an improvement through an issue or pull request.
-
-The starter assets are examples of structure, not approved CIE production assets.
 
 ## Contribute
 
@@ -46,7 +44,6 @@ Assets should remain vendor-flexible where possible. Model or tool dependencies 
 - [`docs/contribution-workflow.md`](docs/contribution-workflow.md): lifecycle and pull requests
 - [`docs/quality-standards.md`](docs/quality-standards.md): review framework
 - [`schemas/`](schemas/): lightweight metadata definition
-- [`examples/`](examples/): index of starter examples
 
 ## Licence
 
