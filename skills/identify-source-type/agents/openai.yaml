@@ -1,0 +1,14 @@
+interface:
+  display_name: Identify Source Type
+  short_description: Classify sources for accurate APA 7 referencing
+  default_prompt: Use $identify-source-type to inspect this source, identify its type,
+    and recommend the appropriate APA 7 reference template.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

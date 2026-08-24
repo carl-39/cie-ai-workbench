@@ -32,16 +32,18 @@ def validate(path: pathlib.Path, expected_type: str) -> list[str]:
         data = yaml.safe_load(raw) or {}
     except (ValueError, yaml.YAMLError) as exc:
         return [f"{path.relative_to(ROOT)}: invalid YAML: {exc}"]
-    missing = REQUIRED - data.keys()
+    metadata = data.get("metadata") if isinstance(data.get("metadata"), dict) else {}
+    asset_data = {**data, **metadata}
+    missing = REQUIRED - asset_data.keys()
     if missing:
         errors.append(f"missing fields: {', '.join(sorted(missing))}")
-    if data.get("type") != expected_type:
+    if asset_data.get("type") != expected_type:
         errors.append(f"type must be {expected_type!r}")
-    if data.get("status") not in STATUSES:
+    if asset_data.get("status") not in STATUSES:
         errors.append("status is not recognised")
-    if not VERSION.fullmatch(str(data.get("version", ""))):
+    if not VERSION.fullmatch(str(asset_data.get("version", ""))):
         errors.append("version must use MAJOR.MINOR.PATCH")
-    reviewed = data.get("last_reviewed")
+    reviewed = asset_data.get("last_reviewed")
     if isinstance(reviewed, dt.date):
         reviewed = reviewed.isoformat()
     try:

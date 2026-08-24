@@ -4,5 +4,5 @@ These assets demonstrate the intended structure. They are `experimental`, have n
 
 - [Research synthesis prompt](../prompts/research-synthesis/)
 - [Prompt engineering skill](../skills/prompt-engineering/)
-- [Source type identification skill](../skills/source-type-identification/)
+- [Identify source type skill](../skills/identify-source-type/)
 - [Verified research synthesis pattern](../patterns/verified-research-synthesis/)
