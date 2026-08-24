@@ -5,7 +5,7 @@ metadata:
   type: skill
   tags: [research, sources, apa-7, referencing]
   audience: [researchers, educators, students]
-  status: experimental
+  status: approved
   version: 0.1.0
   maintainer: CIE / unassigned
   last_reviewed: 2026-08-24
