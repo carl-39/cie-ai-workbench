@@ -1,0 +1,44 @@
+name: Propose a new Workbench asset
+description: Propose a prompt, skill, agent or pattern.
+title: "[Asset]: "
+labels: ["new-asset"]
+body:
+  - type: dropdown
+    id: asset_type
+    attributes:
+      label: Asset type
+      options: [Prompt, Skill, Agent, Pattern]
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Proposed name
+      placeholder: lowercase-kebab-case
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and intended users
+      description: What recurring need would this address, and for whom?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Intended outcome and boundaries
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Proposed tests and evidence
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks, verification and human oversight
+  - type: input
+    id: owner
+    attributes:
+      label: Proposed maintainer

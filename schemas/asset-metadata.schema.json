@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CIE AI Workbench asset metadata",
+  "type": "object",
+  "required": ["name", "type", "description", "status", "version", "maintainer", "last_reviewed"],
+  "properties": {
+    "name": { "type": "string", "minLength": 2 },
+    "type": { "enum": ["prompt", "skill", "agent", "pattern"] },
+    "description": { "type": "string", "minLength": 10 },
+    "tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "audience": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "status": { "enum": ["experimental", "testing", "approved", "deprecated"] },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "maintainer": { "type": "string", "minLength": 2 },
+    "last_reviewed": { "type": "string", "format": "date" }
+  },
+  "additionalProperties": true
+}
