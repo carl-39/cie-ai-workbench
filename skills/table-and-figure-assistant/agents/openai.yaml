@@ -1,0 +1,13 @@
+interface:
+  display_name: "Table and Figure Assistant"
+  short_description: "Format APA 7 tables and figures correctly"
+  default_prompt: "Use $table-and-figure-assistant to review and correct this table or figure for my student assignment."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+policy:
+  products:
+    - "chatgpt"
+    - "codex"
+    - "api"
+    - "atlas"
+  allow_implicit_invocation: true

@@ -13,6 +13,10 @@ The repository is human-readable first and machine-readable where this provides 
 
 References should use relative links. Assets may point to other assets, but copying their contents should be avoided. Agents list skills by stable repository path. Patterns link to the prompts, skills or agents they use.
 
+## Navigation model
+
+The Workbench supports two complementary routes. `collections/` organises navigation around a project, workflow or function, while the catalogue and asset-type directories organise canonical assets by what they are. A collection links to canonical files without duplicating their content, metadata, lifecycle or approval status. One asset may appear in several collections.
+
 ## Standard asset shape
 
 ```text
@@ -21,6 +25,9 @@ References should use relative links. Assets may point to other assets, but copy
 ├── CHANGELOG.md        # recommended after the first substantive revision
 ├── examples/           # optional
 ├── references/         # optional, only when needed
+├── scripts/            # optional deterministic helpers
+├── agents/openai.yaml  # optional product interface metadata for skills
+├── assets/             # optional icons or reusable output resources
 └── tests/              # optional evaluations or test cases
 ```
 

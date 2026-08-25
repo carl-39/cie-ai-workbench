@@ -17,7 +17,7 @@ A prompt tells a tool what to do. A skill describes how to perform a capability 
 
 ## Browse and use
 
-1. Browse [`CATALOGUE.md`](CATALOGUE.md) or an asset-type directory.
+1. Browse [collections](collections/README.md) by project or function, use [`CATALOGUE.md`](CATALOGUE.md), or open an asset-type directory.
 2. Check the asset's status, intended audience, assumptions and limitations.
 3. Use only assets whose approved scope matches the intended task.
 4. Follow the stated verification and human-oversight requirements.
@@ -39,6 +39,7 @@ Assets should remain vendor-flexible where possible. Model or tool dependencies 
 
 ## Repository map
 
+- [`collections/`](collections/): project- and function-based routes through related canonical assets
 - [`docs/architecture.md`](docs/architecture.md): design and relationships
 - [`docs/naming-conventions.md`](docs/naming-conventions.md): names and identifiers
 - [`docs/contribution-workflow.md`](docs/contribution-workflow.md): lifecycle and pull requests

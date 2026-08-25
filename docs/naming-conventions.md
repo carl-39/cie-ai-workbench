@@ -17,7 +17,10 @@ prompts/critique-assessment-brief/
 prompts/synthesise-research-notes/
 agents/apa-7-assistant/
 patterns/verified-research-synthesis/
+collections/academic-writing-and-apa/
 ```
+
+Collections are navigation pages rather than canonical asset types. Name them for a recognisable project, workflow or function and use `README.md` as the entry file.
 
 ## Files
 

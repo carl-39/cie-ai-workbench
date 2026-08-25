@@ -1,0 +1,13 @@
+interface:
+  display_name: "APA 7 Microlearning Coach"
+  short_description: "Master one APA 7 convention at a time"
+  default_prompt: "Use $teach-apa7-microlearning to teach me APA 7 through short adaptive lessons and mastery checks."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+policy:
+  products:
+    - "chatgpt"
+    - "codex"
+    - "api"
+    - "atlas"
+  allow_implicit_invocation: true

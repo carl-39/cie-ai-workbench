@@ -1,0 +1,13 @@
+interface:
+  display_name: "OpenAlex Researcher"
+  short_description: "Find, appraise, and synthesise scholarly research"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $openalex-researcher to find, verify, critically appraise, and synthesise peer-reviewed literature on my topic."
+policy:
+  products:
+    - "chatgpt"
+    - "codex"
+    - "api"
+    - "atlas"
+  allow_implicit_invocation: true

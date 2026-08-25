@@ -4,12 +4,12 @@ Contributions from CIE and Cerebral Circuit are welcome. Keep changes reviewable
 
 ## Add an asset
 
-1. Search the catalogue and directories for related work.
+1. Search the catalogue, collections and asset directories for related work.
 2. Open the relevant issue template or describe the need in an issue.
 3. Create a branch such as `skill/source-type-identification` or `fix/research-synthesis-verification`.
 4. Copy the relevant `_template` into a new kebab-case directory.
 5. Complete useful metadata and content; remove genuinely irrelevant optional sections.
-6. Add or update the catalogue entry and, for substantive changes, `CHANGELOG.md` in the asset directory.
+6. Add or update the catalogue entry, relevant collection links and, for substantive changes, `CHANGELOG.md` in the asset directory.
 7. Test with representative inputs, including at least one difficult or failure case.
 8. Open a pull request using the repository checklist.
 

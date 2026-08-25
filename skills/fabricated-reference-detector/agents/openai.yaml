@@ -1,0 +1,13 @@
+interface:
+  display_name: "Fabricated Reference Detector"
+  short_description: "Verify references and flag fabrication risks"
+  default_prompt: "Use $fabricated-reference-detector to verify these references and explain any fabrication risks."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+policy:
+  products:
+    - "chatgpt"
+    - "codex"
+    - "api"
+    - "atlas"
+  allow_implicit_invocation: true
